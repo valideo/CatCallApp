@@ -29,7 +29,8 @@
     "zone.js": "0.7.2"
   },
   "devDependencies": {
-    "@ionic/app-scripts": "1.1.4",
+    "@ionic/app-scripts": "^3.0.1",
+    "mapbox-gl": "^0.41.0",
     "typescript": "2.0.9"
   },
   "description": "Ionic2Tabs: An Ionic project",
@@ -43,6 +44,8 @@
   ],
   "cordovaPlatforms": [],
   "-vs-binding": {
-    "BeforeBuild": [ "ionic:build" ]
+    "BeforeBuild": [
+      "ionic:build"
+    ]
   }
 }
