@@ -18,15 +18,14 @@ export class HomePage {
         /*Initializing Map*/
         mapboxgl.accessToken = 'pk.eyJ1IjoidmFsaWRlbyIsImEiOiJjajlxOGJzbWo1cnVlMnFxcXNlOG5odzdtIn0.C3pvn7CMluT7KUw6J7N8lQ';
         var map = new mapboxgl.Map({
-            style: 'mapbox://styles/mapbox/light-v9',
+            style: 'mapbox://styles/mapbox/streets-v9',
             center: [-74.0066, 40.7135],
-            zoom: 16,
-            pitch: 80,
-            minZoom: 7.5, //restrict map zoom - buildings not visible beyond 13
+            zoom: 14,
+            pitch: 50,
+            minZoom: 2, //restrict map zoom - buildings not visible beyond 13
             maxZoom: 17,
             container: 'map'
         });
 
     }
-
 }

@@ -135,7 +135,7 @@ DocProject/Help/html
 
 # Click-Once directory
 publish/
-
+platforms/
 # Publish Web Output
 *.[Pp]ublish.xml
 *.azurePubxml
@@ -240,3 +240,4 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
