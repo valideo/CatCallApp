@@ -21,15 +21,7 @@ page-home {
         height: 100%;
     }
 
-    .mapboxgl-ctrl-bottom-right, .mapboxgl-ctrl-bottom-left {
-        display: none;
-    }
-
-    .mapboxgl-missing-css {
-        display: none;
-    }
-
-    .statusbar {
+    .mapboxgl-ctrl-bottom-right, .mapboxgl-ctrl-bottom-left, .mapboxgl-missing-css {
         display: none;
     }
 }
