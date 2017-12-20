@@ -37,7 +37,7 @@ executemap(){
     mapboxgl.accessToken = 'pk.eyJ1IjoidmFsaWRlbyIsImEiOiJjajlxOGJzbWo1cnVlMnFxcXNlOG5odzdtIn0.C3pvn7CMluT7KUw6J7N8lQ';
     var map = new mapboxgl.Map({
         style: 'mapbox://styles/mapbox/streets-v9',
-        center: [this.Coordinates.longitude, this.Coordinates.latitude],
+        center: [4.8376108, 45.7456223],
         zoom: 14,
         pitch: 50,
         minZoom: 4, //restrict map zoom - buildings not visible beyond 13
