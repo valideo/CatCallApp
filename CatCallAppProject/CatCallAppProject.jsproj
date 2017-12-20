@@ -122,7 +122,4 @@
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\assets\css\" />
-  </ItemGroup>
 </Project>

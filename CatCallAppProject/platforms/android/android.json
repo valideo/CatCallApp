@@ -10,14 +10,30 @@
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
-                            "count": 1
+                            "count": 2
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
-                            "count": 1
+                            "count": 2
                         },
                         {
                             "xml": "<uses-feature android:name=\"android.hardware.location.gps\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
                             "count": 1
                         }
                     ]
@@ -49,6 +65,48 @@
                         {
                             "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"webView\" value=\"org.crosswalk.engine.XWalkWebViewEngine\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"xwalkVersion\" value=\"21+\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"xwalkLiteVersion\" value=\"xwalk_core_library_canary:17+\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"xwalkCommandLine\" value=\"--disable-pull-to-refresh-effect\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"xwalkMode\" value=\"embedded\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"xwalkMultipleApk\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"android-minSdkVersion\" value=\"16\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Mapbox\"><param name=\"android-package\" value=\"com.telerik.plugins.mapbox.Mapbox\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "res/values/strings.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<string name=\"mapbox_accesstoken\">pk.eyJ1IjoidmFsaWRlbyIsImEiOiJjajlxOGJzbWo1cnVlMnFxcXNlOG5odzdtIn0.C3pvn7CMluT7KUw6J7N8lQ</string>",
+                            "count": 1
                         }
                     ]
                 }
@@ -78,6 +136,18 @@
             "PACKAGE_NAME": "io.cordova.myapp65c50d"
         },
         "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.cordova.myapp65c50d"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "XWALK_VERSION": "21+",
+            "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+            "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+            "XWALK_MODE": "embedded",
+            "XWALK_MULTIPLEAPK": "true",
+            "PACKAGE_NAME": "io.cordova.myapp65c50d"
+        },
+        "cordova-plugin-mapbox": {
+            "ACCESS_TOKEN": "pk.eyJ1IjoidmFsaWRlbyIsImEiOiJjajlxOGJzbWo1cnVlMnFxcXNlOG5odzdtIn0.C3pvn7CMluT7KUw6J7N8lQ",
             "PACKAGE_NAME": "io.cordova.myapp65c50d"
         }
     },
@@ -129,6 +199,14 @@
             "clobbers": [
                 "navigator.splashscreen"
             ]
+        },
+        {
+            "id": "cordova-plugin-mapbox.Mapbox",
+            "file": "plugins/cordova-plugin-mapbox/www/Mapbox.js",
+            "pluginId": "cordova-plugin-mapbox",
+            "clobbers": [
+                "Mapbox"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -139,6 +217,8 @@
         "cordova-plugin-console": "1.0.5",
         "cordova-plugin-statusbar": "2.2.1",
         "cordova-plugin-device": "1.1.4",
-        "cordova-plugin-splashscreen": "4.0.3"
+        "cordova-plugin-splashscreen": "4.0.3",
+        "cordova-plugin-crosswalk-webview": "2.1.0",
+        "cordova-plugin-mapbox": "1.2.3"
     }
 }
