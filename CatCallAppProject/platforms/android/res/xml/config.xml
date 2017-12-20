@@ -73,4 +73,6 @@
     <preference name="FadeSplashScreenDuration" value="300" />
     <preference name="windows-target-version" value="10.0" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
+    <preference name="Fullscreen" value="True" />
+    <preference name="Orientation" value="portrait" />
 </widget>

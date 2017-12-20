@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <widget id="io.cordova.myapp65c50d" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" defaultlocale="fr-FR">
   <name>CatCallAppProject</name>
   <description>An Ionic Framework and Cordova project for Visual Studio</description>
@@ -98,4 +98,9 @@
   <engine name="android" spec="5.2.1" />
   <engine name="ios" spec="4.2.0" />
   <engine name="windows" spec="4.4.2" />
+  <plugin name="cordova-plugin-crosswalk-webview" spec="~2.1.0" />
+  <plugin name="cordova-plugin-geolocation" spec="~2.4.3" />
+  <plugin name="cordova-plugin-mapbox" spec="~1.2.3" />
+  <preference name="Fullscreen" value="True" />
+  <preference name="Orientation" value="portrait" />
 </widget>
